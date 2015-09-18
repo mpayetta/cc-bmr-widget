@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calories calculator</title>
+
+	<link href="widget.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="widget">
+		<div class="dailyCaloriesContainer">
+			<div class="title">Daily Energy Consumption</div>
+			<div class="dailyCalories">
+				<div class="inputGroup">
+					<div class="label">
+						Gender:
+					</div>
+					<div class="input">
+						<select id="gender">
+							<option value="female">Female</option>
+							<option value="male">Male</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="label">
+						Age:
+					</div>
+					<div class="input">
+						<input type="text" id="age" />
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="label">
+						Weight (lb):
+					</div>
+					<div class="input">
+						<input type="text" id="weight" />
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="label">
+						Height (ft):
+					</div>
+					<div class="input">
+						<input type="text" id="height" />
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="label">
+						Activity Level:
+					</div>
+					<div class="input">
+						<select id="activity">
+							<option value="1.2">Little or no exercise</option>
+							<option value="1.375">Light exericise/sports 1-3 days/week</option>
+							<option value="1.55">Moderate exercise/sports 3-5 days/week</option>
+							<option value="1.725">Hard exercise/sports 6-7 days/week</option>
+							<option value="1.9">Very hard exercise/sports and physical job or 2x training</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="inputGroup">
+					<div class="label">
+						Calories I Burn Daily:
+					</div>
+					<div class="input">
+						<input type="text" id="dailyCalories" disabled />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="neededCalories">
+			<div class="radioBtn loseRadio">
+				<input type="radio" name="pounds" id="lose">
+				<span>I would like to loose </span>
+				<input type="text" class="tiny" id="losePounds">
+				<span> lbs in </span>
+				<input type="text" class="tiny" id="loseDays">
+				<span> days</span>
+			</div>
+			<div class="radioBtn gainRadio">
+				<input type="radio" name="pounds" id="gain">
+				<span>I would like to gain </span>
+				<input type="text" class="tiny" id="gainPounds">
+				<span> lbs in </span>
+				<input type="text" class="tiny" id="gainDays">
+				<span> days</span>
+			</div>
+
+			<div class="caloriesResult">
+				<span>I need a daily calorie intake of </span>
+				<input type="text" class="result" id="result" disabled>
+				<span> to achieve my goal</span>
+			</div>
+		</div>
+	</div>
+
+	<script type='text/javascript' src="widget.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.widget {
+	display: inline-block;
+}
+
+.widget .dailyCaloriesContainer,
+.widget .neededCalories {
+	background-color: #ccc;
+	display: table;
+	margin: 10px 0px;
+	width: 350px;
+	padding: 10px;
+}
+
+.widget .title {
+	margin: 10px 0px 20px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.widget .inputGroup {
+	margin: 10px;
+	display: table-row;
+}
+
+.widget .inputGroup .label,
+.widget .inputGroup .input {
+	display: table-cell;
+	padding: 10px;
+}
+
+.widget .inputGroup input,
+.widget .inputGroup select {
+	width: 150px;
+}
+
+.widget .radioBtn {
+	margin: 10px 0px;
+}
+
+.widget input.tiny {
+	width: 30px;
+	margin: 0px 5px;
+}
+
+.widget input#gainPounds {
+	margin-left: 11px;
+}
+
+.widget input.result {
+	width: 60px;
+	margin: 0px 5px;
+}
+
+.widget .caloriesResult {
+	text-align: center;
+	margin-top: 40px;	
+}
